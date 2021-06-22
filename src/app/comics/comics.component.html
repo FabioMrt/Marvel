@@ -1,0 +1,13 @@
+<h1>
+    Comics
+</h1>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let result of results" class="col-md-4">
+            <mat-card>
+                <img src="{{result.thumbnail.path}}.{{result.thumbnail.extension}}" alt="">
+                {{result.title}}
+            </mat-card>
+        </div>
+    </div>
+</div>
